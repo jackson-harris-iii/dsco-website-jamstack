@@ -1,6 +1,6 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import { RichText, Date } from 'prismic-reactjs';
+import { RichText, linkResolver, Date } from 'prismic-reactjs';
 import { client } from '../prismic-configuration';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -13,7 +13,12 @@ import HeroJumboTron from "../Components/HeroJumbotron"
 const BlogHome = (props) => (
 	<div>
 		<Navigation></Navigation>
-		<HeroJumboTron HeroBlurb={RichText.asText(props.home.data.hero_text)}></HeroJumboTron>
+		<HeroJumboTron
+			// HeroBlurbH1={RichText.render(props.home.data.hero_text.h1, linkResolver)}
+			// HeroBlurbH2={RichText.render(props.home.data.hero_text.h2, linkResolver)}
+			// HeroBlurbBody={RichText.render(props.home.data.hero_text.body_content, linkResolver)}
+			HeroImage={props.home.data.homepage_hero.url}
+		></HeroJumboTron>
 
 		{/* <img src={props.home.data.hompage_hero.url} alt="avatar image" /> */}
 		{/* <h1>{RichText.asText(props.home.data.hero_text)}</h1> */}

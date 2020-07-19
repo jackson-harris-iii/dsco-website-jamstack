@@ -31,13 +31,20 @@ class NavbarPage extends Component {
 
 	render() {
 		return (
-			<MDBNavbar color="cyan darken-4" style={{}} light>
-				<MDBContainer>
-					<MDBNavbarBrand className='white-text'>digital success</MDBNavbarBrand>
+			<MDBNavbar
+				color="cyan darken-4"
+				style={{
+          height: `80px`,
+          zIndex: `100`,
+				}}
+				light
+			>
+				<MDBContainer className="cyan darken-4">
+					<MDBNavbarBrand className="white-text">digital success</MDBNavbarBrand>
 					<MDBHamburgerToggler color="white" id="hamburger1" onClick={() => this.toggleSingleCollapse('collapse1')} />
 					<MDBCollapse isOpen={this.state.collapse1} navbar>
 						<MDBNavbarNav left>
-							<MDBNavItem active>
+							<MDBNavItem >
 								<Link href="#!">
 									<a className="nav-link">Home</a>
 								</Link>
