@@ -31,33 +31,31 @@ class NavbarPage extends Component {
 
 	render() {
 		return (
+			<MDBNavbar color="cyan darken-4" style={{}} light>
 				<MDBContainer>
-					<MDBNavbar color="amber lighten-4" style={{ marginTop: '20px' }} light>
-						<MDBContainer>
-							<MDBNavbarBrand>digital success</MDBNavbarBrand>
-							<MDBHamburgerToggler
-								color="#d3531a"
-								id="hamburger1"
-								onClick={() => this.toggleSingleCollapse('collapse1')}
-							/>
-							<MDBCollapse isOpen={this.state.collapse1} navbar>
-								<MDBNavbarNav left>
-									<MDBNavItem active>
-										<Link href="#!">
-                      <a className="nav-link">Home</a></Link>
-									</MDBNavItem>
-									<MDBNavItem>
-										<Link href="#!">
-                      <a className="nav-link">Portfolio</a></Link>
-									</MDBNavItem>
-									<MDBNavItem>
-										<Link href="#!"><a className="nav-link">About Us</a></Link>
-									</MDBNavItem>
-								</MDBNavbarNav>
-							</MDBCollapse>
-						</MDBContainer>
-					</MDBNavbar>
+					<MDBNavbarBrand className='white-text'>digital success</MDBNavbarBrand>
+					<MDBHamburgerToggler color="white" id="hamburger1" onClick={() => this.toggleSingleCollapse('collapse1')} />
+					<MDBCollapse isOpen={this.state.collapse1} navbar>
+						<MDBNavbarNav left>
+							<MDBNavItem active>
+								<Link href="#!">
+									<a className="nav-link">Home</a>
+								</Link>
+							</MDBNavItem>
+							<MDBNavItem>
+								<Link href="#!">
+									<a className="nav-link">Portfolio</a>
+								</Link>
+							</MDBNavItem>
+							<MDBNavItem>
+								<Link href="#!">
+									<a className="nav-link">About Us</a>
+								</Link>
+							</MDBNavItem>
+						</MDBNavbarNav>
+					</MDBCollapse>
 				</MDBContainer>
+			</MDBNavbar>
 		);
 	}
 }

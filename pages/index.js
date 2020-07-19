@@ -12,17 +12,17 @@ import HeroJumboTron from "../Components/HeroJumbotron"
 
 const BlogHome = (props) => (
 	<div>
-    <Navigation></Navigation>
-		<HeroJumboTron></HeroJumboTron>
+		<Navigation></Navigation>
+		<HeroJumboTron HeroBlurb={RichText.asText(props.home.data.hero_text)}></HeroJumboTron>
 
-		<img src={props.home.data.image.url} alt="avatar image" />
-		<h1>{RichText.asText(props.home.data.headline)}</h1>
-		<p>{RichText.asText(props.home.data.description)}</p>
+		{/* <img src={props.home.data.hompage_hero.url} alt="avatar image" /> */}
+		{/* <h1>{RichText.asText(props.home.data.hero_text)}</h1> */}
+		{/* <p>{RichText.asText(props.home.data.description)}</p>  */}
 	</div>
 );
 
 BlogHome.getInitialProps = async (context) => {
-	const home = await client.getSingle('blog_home');
+	const home = await client.getSingle('homepage');
 
 	return { home };
 };
