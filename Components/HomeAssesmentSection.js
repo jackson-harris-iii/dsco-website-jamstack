@@ -12,7 +12,7 @@ const CardExample = () => {
 				/>
 			</MDBCol>
 
-			<MDBCol className='my-auto' sm="4">
+			<MDBCol className='my-auto justify-content-center' sm="4" style={{display: 'grid'}}>
 				<MDBTypography tag="h2" className="text-center font-weight-bold">
 					Get Your Free Digital Success Assessment!
 				</MDBTypography>
@@ -20,6 +20,14 @@ const CardExample = () => {
 					We’ll do a free consultation with you to learn about your business. Together we can determine how we can help
 					your business achieve digital success.
 				</MDBTypography>
+				<a className="align-center mx-auto" href={"http://calendly.com/jharris3"} target="_blank">
+					<MDBBtn
+					className="align-center mx-auto"
+					style={{maxWidth: '250px'}}
+					>
+						Schedule A Call
+					</MDBBtn>
+				</a>
 			</MDBCol>
 		</MDBRow>
 	);

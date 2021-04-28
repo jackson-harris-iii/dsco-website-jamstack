@@ -46,17 +46,17 @@ class NavbarPage extends Component {
 						<MDBNavbarNav left>
 							<MDBNavItem >
 								<Link href="#!">
-									<a className="nav-link">Home</a>
+									<a className="nav-link" style={{ fontSize: '1.5em'}}>Home</a>
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
 								<Link href="#!">
-									<a className="nav-link">Portfolio</a>
+									<a className="nav-link" style={{ fontSize: '1.5em'}}>Portfolio</a>
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
 								<Link href="#!">
-									<a className="nav-link">About Us</a>
+									<a className="nav-link" style={{ fontSize: '1.5em'}}>About Us</a>
 								</Link>
 							</MDBNavItem>
 						</MDBNavbarNav>
