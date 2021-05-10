@@ -34,7 +34,7 @@ class NavbarPage extends Component {
 			<MDBNavbar
 				color="cyan darken-4"
 				style={{
-          height: `80px`,
+          height: `60px`,
           zIndex: `100`,
 				}}
 				light
@@ -46,17 +46,17 @@ class NavbarPage extends Component {
 						<MDBNavbarNav left>
 							<MDBNavItem >
 								<Link href="#!">
-									<a className="nav-link" style={{ fontSize: '1.5em'}}>Home</a>
+									<a className="nav-link" style={{ color:'white' , fontSize: '1em'}}>Home</a>
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
 								<Link href="#!">
-									<a className="nav-link" style={{ fontSize: '1.5em'}}>Portfolio</a>
+									<a className="nav-link" style={{ color:'white', fontSize: '1em'}}>Portfolio</a>
 								</Link>
 							</MDBNavItem>
 							<MDBNavItem>
 								<Link href="#!">
-									<a className="nav-link" style={{ fontSize: '1.5em'}}>About Us</a>
+									<a className="nav-link" style={{ color:'white', fontSize: '1em'}}>About Us</a>
 								</Link>
 							</MDBNavItem>
 						</MDBNavbarNav>

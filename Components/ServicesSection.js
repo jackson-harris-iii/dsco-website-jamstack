@@ -4,6 +4,18 @@ import { MDBCard, MDBCardTitle, MDBBtn, MDBRow, MDBCol, MDBIcon, MDBTypography }
 const CardExample = () => {
 	return (
 		<MDBRow>
+			<div style={{
+				backgroundImage: `url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNTBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0wIDE0MGgxMjgwQzU3My4wOCAxNDAgMCAwIDAgMHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgMzAgMCAzMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgNjAgMCA2MHoiLz48L2c+PC9zdmc+)`,
+				backgroundSize: `100% 250px`,
+				top: `0`,
+				height: `250px`,
+				zIndex: `1`,
+				transform: `rotateX(
+		180deg
+		)`,
+			}}>
+
+			</div>
 			<MDBCol md="12">
 				<MDBTypography tag="h3" className="text-center mt-5 text-white">
 					For all your digital marketing & development needs…
@@ -22,20 +34,17 @@ const CardExample = () => {
 				>
 					<div className="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
 						<div>
-							<h5 className="pink-text">
-								<MDBIcon icon="chart-pie" /> Marketing
+							<h5 className="">
+							<MDBIcon size="3x" icon="desktop" />
 							</h5>
 							<MDBCardTitle tag="h3" className="pt-2">
-								<strong>This is card title</strong>
+								<strong>Website Development</strong>
 							</MDBCardTitle>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio
-								vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui,
-								dolorum!
+							Mobile Optimization<br/>
+							Online Stores<br/>
+							Curb Side Pick Up<br/>
 							</p>
-							<MDBBtn color="pink">
-								<MDBIcon icon="clone left" /> View project
-							</MDBBtn>
 						</div>
 					</div>
 				</MDBCard>
